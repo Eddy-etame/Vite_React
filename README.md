@@ -1,17 +1,11 @@
 # TP Bug Hunt — rendu
 
-Projet Vite + React pour montrer les composants **corrigés** (dossier `src/bug-hunt/`). L’énoncé PDF du cours est copié dans `assets/TP-Bug-Hunt-Challenge.pdf`, et les versions buguées telles qu’à l’énoncé sont dans `assets/reference/` pour pouvoir citer les lignes quand j’explique ce qui clochait.
-
 ## Lancer le projet
 
 ```bash
 npm install
 npm run dev
 ```
-
-Ensuite j’ouvre l’URL affichée dans le terminal : les onglets en haut passent d’un niveau à l’autre. Pour vérifier que tout compile : `npm run build`. Pour régénérer le PDF de ce rendu : `npm run pdf` (génère `docs/TP_Bug_Hunt_Reponses.pdf` à partir de ce README).
-
----
 
 ## Partie 1 — QCM (mes réponses)
 
