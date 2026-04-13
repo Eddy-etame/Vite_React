@@ -1,0 +1,89 @@
+:root {
+  font-family: system-ui, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1a1a2e;
+  background: #f4f5fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+}
+
+h1 {
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem;
+}
+
+.tab-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.tab-bar button {
+  border: 1px solid #c5c8e8;
+  background: #fff;
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.tab-bar button.active {
+  background: #646cff;
+  color: #fff;
+  border-color: #646cff;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e0e2f0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 0.85rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form .error {
+  color: #c62828;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.contact-form .success-message {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}

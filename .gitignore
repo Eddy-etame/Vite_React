@@ -1,0 +1,24 @@
+# Dependencies & build
+node_modules/
+dist/
+
+# Local / private (drafts, notes, exports not meant for git)
+private/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Vite
+*.local
