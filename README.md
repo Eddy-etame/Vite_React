@@ -157,7 +157,3 @@ Sans annulation, si `userId` change vite, une réponse lente peut arriver **apr�
 | `docs/TP_Bug_Hunt_Reponses.pdf` | Export PDF de ce README |
 
 ---
-
-## Checklist barème (rappel)
-
-QCM fait ; Niveaux 1 à 5 couverts avec au moins le nombre de bugs demandé sur les parties code ; bonus race condition traité ; tout compile avec `npm run build`.
