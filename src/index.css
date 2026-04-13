@@ -20,6 +20,12 @@ body {
   padding: 1rem 1.25rem 2rem;
 }
 
+.hint {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0 0 0.5rem;
+}
+
 h1 {
   font-size: 1.35rem;
   margin: 0 0 0.75rem;

@@ -2,8 +2,12 @@
 node_modules/
 dist/
 
-# Local / private (drafts, notes, exports not meant for git)
+# Local / private (brouillons, notes perso, ce que je ne veux pas rendre)
 private/
+drafts/
+*.draft.*
+*cheatsheet*
+.cursor/
 
 # Environment
 .env

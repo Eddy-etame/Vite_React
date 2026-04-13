@@ -1,27 +1,17 @@
-"""Génère docs/TP_Bug_Hunt_Reponses.pdf à partir de docs/answers.md (texte brut paginé)."""
+"""Écrit docs/TP_Bug_Hunt_Reponses.pdf à partir du README (texte paginé)."""
 from pathlib import Path
 
-import fitz  # PyMuPDF
+import fitz
 
 ROOT = Path(__file__).resolve().parent.parent
-MD_PATH = ROOT / "docs" / "answers.md"
+MD_PATH = ROOT / "README.md"
 OUT_PATH = ROOT / "docs" / "TP_Bug_Hunt_Reponses.pdf"
 
 CHARS_PER_PAGE = 3500
 
 
-def strip_frontmatter(text: str) -> str:
-    if not text.startswith("---"):
-        return text
-    parts = text.split("---", 2)
-    if len(parts) >= 3:
-        return parts[2].lstrip("\n")
-    return text
-
-
 def main() -> None:
-    raw = MD_PATH.read_text(encoding="utf-8")
-    body = strip_frontmatter(raw)
+    body = MD_PATH.read_text(encoding="utf-8")
 
     doc = fitz.open()
     page_width, page_height = fitz.paper_size("a4")

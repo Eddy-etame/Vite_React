@@ -43,8 +43,9 @@ export default function App() {
     <>
       <h1>TP Bug Hunt — composants corrigés</h1>
       <p style={{ fontSize: '0.9rem', color: '#555' }}>
-        Démonstration locale des niveaux 1 à 5 (version corrigée). Voir le PDF
-        de réponses pour le détail des bugs et les références de code.
+        Onglets : chaque niveau correspond à un exercice du TP. Les explications
+        et le QCM sont dans le README du projet ; le code corrigé est dans{' '}
+        <code>src/bug-hunt/</code>.
       </p>
       <div className="tab-bar" role="tablist">
         {TABS.map((t) => (

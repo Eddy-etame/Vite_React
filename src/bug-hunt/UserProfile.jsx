@@ -1,9 +1,6 @@
 import { useState, useEffect, startTransition } from 'react'
 
-/**
- * Démo Niveau 5 : données via JSONPlaceholder (users 1–10).
- * Annulation des réponses obsolètes avec AbortController.
- */
+// Profil utilisateur : fetch + AbortController quand userId change (évite les réponses en retard).
 export default function UserProfile({ userId }) {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(false)
